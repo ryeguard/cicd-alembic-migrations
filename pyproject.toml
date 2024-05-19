@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cicd-alembic-migrations"
+version = "0.1.0"
+description = ""
+authors = ["Simon Rygård <simon.rygard+dev.github@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+alembic = "^1.13.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
