@@ -16,7 +16,7 @@ with engine.connect() as conn:
     conn.execute(text("DROP TABLE IF EXISTS some_table"))
     conn.commit()
 
-    conn.execute(text("CREATE TABLE some_table (x int, y int)"))
+    # conn.execute(text("CREATE TABLE some_table (x int, y int)"))
     conn.execute(
         text("INSERT INTO some_table (x, y) VALUES (:x, :y)"),
         [{"x": random.randint(1, 100), "y": random.randint(1, 100)} for _ in range(3)],
