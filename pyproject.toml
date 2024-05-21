@@ -6,8 +6,10 @@ authors = ["Simon Rygård <simon.rygard+dev.github@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 alembic = "^1.13.1"
+sqlalchemy = "^2.0.30"
+psycopg2-binary = "^2.9.9"
 
 
 [build-system]
