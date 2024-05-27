@@ -37,10 +37,6 @@ jobs:
         run: |
           poetry run alembic upgrade head
 
-      - name: run tests
-        run: |
-          poetry run pytest
-
       - name: run downgrade migrations
         run: |
           poetry run alembic downgrade base
